@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Clientes</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="index.js" defer></script>
+</head>
+<body>
+  <div class="container" id="cliente">
+    <h1>Portal Clientes</h1>
+    <form class="input-container" id="form-clientes">
+      <textarea name="comprovante" id="comprovante" cols="30" rows="2"></textarea>
+      <input type="file" name="arquivo" id="arquivo">
+      <input type="submit" name="acao" value="Enviar">
+    </form>
+  </div>
+  <div class="container hidden" id="admin">
+    <h1>Portal Administradores</h1>
+    <a href="#" id="login">Login com o Google</a>
+    <div class="hidden" id="listar-pedidos">
+      <h1>Últimas solicitações</h1>
+      <div id="documentos-container"></div>
+      <input type="submit" value="Sair" id="out-login">
+    </div>
+  </div>
+</body>
+</html>
